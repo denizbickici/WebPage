@@ -81,12 +81,14 @@
 
 /* teaser */
 .teaser {
-  margin: 14px auto 0;
+  width: min(1120px, calc(100vw - 32px));
+  margin: 14px 0 0 50%;
+  transform: translateX(-50%);
   text-align: center;
 }
 .teaser img {
   width: 100%;
-  max-width: 980px;
+  max-width: none;
   border-radius: var(--radius);
   border: 1px solid var(--border);
 }
@@ -127,6 +129,17 @@
   object-fit: contain;
   padding: 0;
   border-radius: 0;
+}
+.method-figure {
+  width: min(1120px, calc(100vw - 32px));
+  margin: 8px 0 0 50%;
+  transform: translateX(-50%);
+}
+.method-figure img { max-width: none; }
+.qualitative-figure img {
+  box-sizing: border-box;
+  padding: 14px;
+  background: #fff;
 }
 .figure .cap {
   max-width: 860px;
