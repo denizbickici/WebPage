@@ -81,9 +81,7 @@
 
 /* teaser */
 .teaser {
-  width: min(940px, calc(100vw - 32px));
-  margin: 14px 0 0 50%;
-  transform: translateX(-50%);
+  margin: 14px 0 0;
   text-align: center;
 }
 .teaser img {
@@ -131,9 +129,7 @@
   border-radius: 0;
 }
 .method-figure {
-  width: min(940px, calc(100vw - 32px));
-  margin: 8px 0 0 50%;
-  transform: translateX(-50%);
+  margin: 8px 0 0;
 }
 .method-figure img { max-width: none; }
 .qualitative-figure img {
