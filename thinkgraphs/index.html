@@ -24,14 +24,15 @@
       <p class="subtitle">Asynchronous Vision-Language Agents for Incremental 3D Scene Graphs</p>
 
       <p class="authors-list">
-        <a class="me" href="../">Deniz Bickici</a><sup>1,2</sup>,
-        <a href="https://michael-pabst.com/" target="_blank" rel="noopener">Michael Pabst</a><sup>1,2</sup>,
+        <a class="me" href="../">Deniz Bickici</a><sup>1,3</sup>,
+        <a href="https://michael-pabst.com/" target="_blank" rel="noopener">Michael Pabst</a><sup>1,3</sup>,
         <a href="https://mugichoko445.github.io/" target="_blank" rel="noopener">Shohei Mori</a><sup>1</sup>,
-        <a href="https://schmalstieg.github.io/" target="_blank" rel="noopener">Dieter Schmalstieg</a><sup>1</sup>
+        <a href="https://schmalstieg.github.io/" target="_blank" rel="noopener">Dieter Schmalstieg</a><sup>1,2</sup>
       </p>
       <p class="affil-list">
         <sup>1</sup>University of Stuttgart, VISUS &nbsp;·&nbsp;
-        <sup>2</sup>IMPRS-IS
+        <sup>2</sup>Graz University of Technology, Austria &nbsp;·&nbsp;
+        <sup>3</sup>IMPRS-IS
       </p>
 
       <div class="btn-row">
@@ -73,10 +74,10 @@
       <p class="abstract">
         Open-vocabulary 3D scene graph methods typically operate in two stages: first reconstruct, then enrich with
         vision-language models, leaving the graph unqueryable during exploration. We argue that this sequential coupling
-        is unnecessary and propose an <strong>asynchronous architecture</strong> in which lightweight online mapping runs
+        is unnecessary and propose an asynchronous architecture in which lightweight online mapping runs
         concurrently with heavyweight semantic refinement. A probabilistic voxel-based backbone maintains stable object
         identities incrementally, while background VLM agents progressively enrich the graph. This framework resolves
-        duplicate object tracks through <strong>semantic loop closure</strong>, attaches fine-grained visual attributes,
+        duplicate object tracks through semantic loop closure, attaches fine-grained visual attributes,
         and infers spatial relations between objects. A multi-target frame scheduler amortizes VLM cost by selecting a
         small set of informative frames that jointly cover multiple targets. he resulting scene graph is queryable during 
         exploration and grows in semantic richness over time.  Our method outperforms existing open-vocabulary 3D scene 
@@ -101,7 +102,7 @@
       <ul class="feat">
         <li>
           <strong>Asynchronous architecture.</strong> Lightweight online mapping is decoupled from heavyweight VLM
-          reasoning, yielding a graph that is queryable from the first frame and grows in semantic richness without
+          reasoning, yielding a graph that is queryable during exploration and grows in semantic richness over time without
           blocking exploration.
         </li>
         <li>
