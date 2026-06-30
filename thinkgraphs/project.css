@@ -81,7 +81,7 @@
 
 /* teaser */
 .teaser {
-  width: min(1120px, calc(100vw - 32px));
+  width: min(940px, calc(100vw - 32px));
   margin: 14px 0 0 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -131,7 +131,7 @@
   border-radius: 0;
 }
 .method-figure {
-  width: min(1120px, calc(100vw - 32px));
+  width: min(940px, calc(100vw - 32px));
   margin: 8px 0 0 50%;
   transform: translateX(-50%);
 }
